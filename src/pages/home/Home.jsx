@@ -53,7 +53,7 @@ const Home = () => {
                 //     tailUrl: tailUrl,
                 //     userId: user._id
                 // })
-                  const res = await axios.post("http://shortlinkdm.herokuapp.com/short", {
+                  const res = await axios.post("http://shortlink123.herokuapp.com/short", {
                     url: url,
                     tailUrl: tailUrl,
                     userId: user._id
@@ -65,7 +65,7 @@ const Home = () => {
                 setStatus(res.status)
             }
             else {
-                const res = await axios.post("https://shortlinkdm.herokuapp.com/short", {
+                const res = await axios.post("https://shortlink123.herokuapp.com/short", {
                     url: url,
                     tailUrl: tailUrl,
                 })
