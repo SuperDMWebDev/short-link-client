@@ -28,7 +28,7 @@ const Register = () => {
                 password: password,
                 rePassword: rePassword
             })
-
+            
             setStatus(res.data.enumError)
 
             if (res.data.success) {
