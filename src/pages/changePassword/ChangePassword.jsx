@@ -29,7 +29,7 @@ export default function ChangePassword() {
             rePassword: rePassword
         }
         
-        const res = await axios.put('https://shortlinkdm.herokuapp.com/api/auth/password', data, {
+        const res = await axios.put('https://shortlink123.herokuapp.com/api/auth/password', data, {
             headers: {
                 token: token
             }

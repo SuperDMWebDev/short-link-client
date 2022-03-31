@@ -17,7 +17,7 @@ const Manager = () => {
     const [reload, setReload] = useState()
 
     const handleDelete = async (id) => {
-        await axios.delete(`https://shortlinkdm.herokuapp.com/${id}`, {
+        await axios.delete(`https://shortlink123.herokuapp.com/${id}`, {
             headers: {
                 token: token
               }
@@ -27,7 +27,7 @@ const Manager = () => {
 
     useEffect(() => {
         const fetchList = async () => {
-            const res = await axios.get('https://shortlinkdm.herokuapp.com/list', {
+            const res = await axios.get('https://shortlink123.herokuapp.com/list', {
                 headers: {
                     token: token
                 }
@@ -57,7 +57,7 @@ const Manager = () => {
                             return (
                                 <tr id={list._id} key={index}>
                                     <th scope="row">{index + 1}</th>
-                                    <td><a href={`https://shortlinkdm.herokuapp.com/${list.shortLink}`}>{`https://shortlinkdm.herokuapp.com/${list.shortLink}`}</a></td>
+                                    <td><a href={`https://shortlink123.herokuapp.com/${list.shortLink}`}>{`https://shortlink123.herokuapp.com/${list.shortLink}`}</a></td>
                                     <td>{list.oldLink}</td>
                                     <td>{list.click}</td>
                                     <td className={style.del} onClick={() => handleDelete(list._id)} >Delete</td>

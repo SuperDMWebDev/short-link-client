@@ -23,7 +23,7 @@ const Register = () => {
             statusRef.current.innerHTML = 'Vui lòng điền đầy đủ thông tin'
         }
         else {
-            const res = await axios.post('https://shortlinkdm.herokuapp.com/api/auth/register', {
+            const res = await axios.post('https://shortlink123.herokuapp.com/api/auth/register', {
                 username: username,
                 password: password,
                 rePassword: rePassword

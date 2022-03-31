@@ -24,7 +24,7 @@ const Login = () => {
             statusRef.current.innerHTML = 'Vui lòng điền đầy đủ thông tin'
         }
         else {
-            const res = await axios.post('https://shortlinkdm.herokuapp.com/api/auth/login', {
+            const res = await axios.post('https://shortlink123.herokuapp.com/api/auth/login', {
                 username: username,
                 password: password
             })
